@@ -1,0 +1,38 @@
+mkdir unix_test
+cd unix_test
+touch trybe.txt
+cp trybe.txt trybe_backup.txt
+mv trybe.txt trybe_test.txt
+mkdir backup
+mv trybe_backup.txt backup/
+mkdir backup2
+cd backup
+mv trybe_backup.txt ../backup2
+cd ../
+rmdir backup
+mv backup2 backup
+pwd
+ls -l
+rm -rf backup
+clear
+cat > skill.txt
+Internet
+Unix
+Bash
+HTML
+CSS
+JavaScript
+React
+SQL
+head -5 skill.txt
+Internet
+Unix
+Bash
+HTML
+CSS
+tail -4 skill.txt
+CSS
+JavaScript
+React
+SQL
+rm *.txt

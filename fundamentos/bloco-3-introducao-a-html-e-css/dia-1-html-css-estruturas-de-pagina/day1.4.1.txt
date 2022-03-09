@@ -1,0 +1,25 @@
+cd Documents/Trybe/unix_tests
+cat > skills2.txt
+Internet
+Unix
+Bash
+cat >> skills2.txt
+Java
+JavaScript
+CSS
+HTML
+Web
+sort < skills2.txt
+cat skills2.txt | wc -l
+sort < skills.txt | head -3 > top_skills.txt
+cat > phrases2.txt
+Hello
+World
+!
+grep 'br' phrases2.txt | wc -l
+grep -v 'br' phrases2.txt | wc -l
+cat >> phrases2.txt
+Ana 
+Pedro
+cat phrases2.txt countries.txt > bunch_of_things.txt
+sort bunch_of_things.txt
