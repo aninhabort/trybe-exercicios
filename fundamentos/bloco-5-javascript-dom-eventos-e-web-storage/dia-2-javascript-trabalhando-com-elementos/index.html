@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      const createH1 = document.createTextNode(
+        "Exercício 5.2 - JavaScript DOM"
+      );
+      document.body.appendChild(createH1);
+      createH1.className = "title";
+
+      const creatMain = document.createElement("main");
+      body.appendChild(creatMain);
+
+      const createSection = document.createElement("section")[0];
+      createSection.className = "center-content";
+      main.appendChild(createSection);
+      const createSection2 = document.createElement("section")[1];
+      createSection2.className = "left-content";
+      main.appendChild(createSection2);
+      const createSection3 = document.createElement("section")[2];
+      createSection3.className = "right-content";
+      main.appendChild(createSection3);
+
+      const createP = document.createElement("p");
+      section.appendChild(createP);
+
+      const createImg = document.createElement("img");
+      createImg.src = "https://picsum.photos/200";
+      createImg.className = "small-image";
+      const imgLeft = document.getElementsByClassName("left-content");
+      imgLeft.appendChild(createImg);
+
+      function listNaoOrdenada() {
+        const createList = document.createElement("ul");
+        const list = document.createElement("li");
+        list.appendChild(document.createTextNode("Element 11"));
+        createList.appendChild(list);
+      }
+
+      const createH3 = document.createElement("h3");
+      createH3.className = "description";
+      const createH32 = document.createElement("h3");
+      createH32.className = "description";
+      const createH33 = document.createElement("h3");
+      createH33.className = "description";
+
+      createSection2.removeChild();
+      createSection3.style.marginRight = "auto";
+      createSection.style.backgrounColor = "green";
+
+      listNaoOrdenada.lastElementChild().removeChild()[10];
+      listNaoOrdenada.lastElementChild().removeChild()[9];
+    </script>
+  </body>
+</html>
