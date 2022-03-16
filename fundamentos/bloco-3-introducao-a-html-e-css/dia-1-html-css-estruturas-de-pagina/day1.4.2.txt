@@ -1,0 +1,7 @@
+ls -l
+chmod 777 bunch_of_things.txt
+ls -l
+chmod 444 bunch_of_things.txt
+ls -l
+chmod 644 bunch_of_things.txt
+ls -l
