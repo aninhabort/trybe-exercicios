@@ -14,10 +14,24 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
-const button = document.createElement('button');
-button.innerHTML = 'Feriados';
-button.id = 'btn-holiday';
-const divButtons = document.getElementsByClassName('buttons-container')
-divButtons.appendChild(button);
+function daysW() {
+    const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+    const ulDays = document.getElementById('days');
+    
+    for (var i = 0; i < dezDaysList.length; i += 0) {
+        const daysList = dezDaysList[i];
+        const list = document.createElement('li').appendChild(daysList);
+        
+        if (daysList === 24 || daysList === 25 || daysList === 31) {
+            list.className('day holiday');
+        } else if (daysList === 4 || daysList === 11 || daysList === 18 || daysList === 25) {
+            list.className('day friday');
+        } else {
+            list.className('day');
+        }
+        
+        ulDays.appendChild(list);
+    }
+}
 
-button.addEventListener('click');
+daysW();
