@@ -19,12 +19,12 @@ function daysW() {
     const ulDays = document.getElementById('days');
     
     for (var i = 0; i < dezDaysList.length; i += 0) {
-        const daysList = dezDaysList[i];
-        const list = document.createElement('li').appendChild(daysList);
+        const day = dezDaysList[i];
+        const list = document.createElement('li').appendChild(day);
         
-        if (daysList === 24 || daysList === 25 || daysList === 31) {
+        if (day === 24 || day === 25 || day === 31) {
             list.className('day holiday');
-        } else if (daysList === 4 || daysList === 11 || daysList === 18 || daysList === 25) {
+        } else if (day === 4 || day === 11 || day === 18 || day === 25) {
             list.className('day friday');
         } else {
             list.className('day');
@@ -33,5 +33,4 @@ function daysW() {
         ulDays.appendChild(list);
     }
 }
-
-daysW();
+daysW()
