@@ -19,3 +19,8 @@ form {
     border-radius: 5px;
     color: white;
 }
+
+#btn-enviar:hover,
+#btn-reset:hover {
+    background-color: rgb(94, 60, 60);
+}

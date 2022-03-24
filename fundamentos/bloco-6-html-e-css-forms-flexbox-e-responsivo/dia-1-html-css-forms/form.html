@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Formulario</title>
+    <title>Exercício 6.1 - Formulário</title>
 </head>
 
 <body>
-    <h1>Formulario</h1>
-    <form action="" method="get">
+    <h1>Formulário</h1>
+    <form action="" method="get" enctype="multipart/form-data" id="formulario">
         <label for="input-text">Nome Completo:</label>
         <input type="text" id="input-text">
 
@@ -53,10 +53,10 @@
 
         <br>
 
+        <input type="submit" id="btn-enviar" value="Enviar">
+        <input type="reset" id="btn-reset" value="Apagar">
     </form>
 
-    <input type="submit" value="enviar" id="btn-enviar">
-    <input type="reset" value="Apagar" id="btn-reset">
 
 </body>
 <script src="scripts.js"></script>
