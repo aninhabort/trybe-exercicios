@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+    background: #fff;
+}
+
+#header {
+    background: #ccc;
+    padding: 20px;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#navigation {
+    width: 100%;
+    background: #333;
+}
+
+#navigation ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation ul li {
+    list-style-type: none;
+    display: flex;
+}
+
+#navigation li a {
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+
+#navigation li a:hover {
+    background: #383;
+}
+
+#content-container {
+    width: 100%;
+    background: #FFF;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    padding: 20px 0;
+    margin: 0 0 0 4%;
+}
+
+#content h2 {
+    margin: 0;
+}
+
+#aside {
+    width: 33%;
+    padding: 20px 0;
+    margin: 0 3% 0 0;
+}
+
+#aside h3 {
+    margin: 5px;
+}
+
+#footer {
+    background: #ccc;
+    text-align: right;
+    padding: 20px;
+    height: 1%;
+}
+
+@media print {
+
+    #header,
+    #navigation,
+    #footer {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 240px) {
+    #aside {
+        display: none;
+    }
+
+    body {
+        font-size: small;
+        padding: none;
+    }
+
+    #header {
+        position: fixed;
+        padding: 20px 53.4px;
+        font-size: small;
+    }
+
+    #navigation {
+        display: inline-flex;
+        margin: 5px;
+        margin-top: 75px;
+        max-width: 230px;
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navigation li a {
+        border-right: none;
+    }
+
+    img {
+        width: 200px;
+        margin: 10px;
+    }
+
+    p {
+        width: 220px;
+        text-align: justify;
+    }
+
+    #footer {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    #aside {
+        display: none;
+    }
+
+    body {
+        font-size: small;
+        padding: none;
+    }
+
+    #header {
+        position: fixed;
+        padding: 20px 112.9px;
+        font-size: small;
+        display: flex;
+    }
+
+    #navigation {
+        display: inline-flex;
+        margin: 5px;
+        margin-top: 75px;
+        max-width: 350px;
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navigation li a {
+        border-right: none;
+    }
+
+    img {
+        width: 315px;
+        margin: 10px;
+    }
+
+    p {
+        width: 330px;
+        text-align: justify;
+    }
+
+    #footer {
+        text-align: center;
+    }
+}
