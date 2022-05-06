@@ -1,0 +1,37 @@
+body {
+    background-image: url("/public/pokebola.png");
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.575);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: fit-content;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    margin-left: 10px
+}
