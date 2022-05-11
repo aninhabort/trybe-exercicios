@@ -1,0 +1,33 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.title {
+  font-size: 45px;
+}
+
+.text1 {
+  line-height: 5px;
+  font-size: 14px;
+}
+
+.paragraph {
+  text-align: justify;
+  margin: 10px;
+}
+
+button {
+  margin-top: 10px;
+  width: 250px;
+  height: 60px;
+  font-size: 16px;
+}
