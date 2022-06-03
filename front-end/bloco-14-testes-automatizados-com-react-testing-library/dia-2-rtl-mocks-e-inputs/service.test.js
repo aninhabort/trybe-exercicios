@@ -16,3 +16,14 @@ test('teste se ao receber dois parametros e retornar a divisao do primeiro pelo 
     expect(service.randomNum).toHaveBeenCalled();
     expect(service.randomNum).toHaveBeenCalledWith(10, 2);
 })
+
+test('teste se ao receber 3 parametros, sendo multiplicado, resetado, retornando o dobro', () => {
+    service.randomNum = jest.fn().mockImplementation((a, b, c) => a * b * c);
+
+    expect(service.randomNum(10, 2, 4)).toBe(80);
+    expect(service.randomNum).toHaveBeenCalled();
+    
+    service.randomNum.mockReset();
+    service.randomNum = jest.fn().mockImplementation((a,) => a * 2);
+    expect(service.randomNum(10)).toBe(20);
+})
